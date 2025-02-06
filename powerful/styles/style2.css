@@ -1,0 +1,460 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+
+} 
+.header{
+    min-height: 100vh;
+    width: 100%;
+    /* background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../images/pic.webp); */
+    /* background-image: linear-gradient(rgba(4, 30, 7, 0.7),rgba(4,9,30,0.7)),url(../images/pic.webp); */
+    /* opacity: 1; */
+    background-position: center;
+    background-size: cover;
+    /* position: relative; */
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: animate 20s ease-in-out infinite;
+    
+}
+
+@keyframes animate{
+    0%, 100%{
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.9)), url(../images/pic.webp);
+    
+    }
+    25%{
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.9)), url(../images/pic2.webp);
+    }
+    50%{
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.9)), url(../images/Pic3.webp);
+    }
+    75%{
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.9)), url(../images/pic4.webp);
+    }
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* nav img{
+    width: 80px;
+    height: 78px;
+    border-radius: 50%;
+} */
+nav img{
+    width: 180px;
+    height: 178px;
+    position: relative;
+    bottom: 50px;
+    right: 5%;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+    position: relative;
+    bottom: 50px;
+    left: 15px;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-size: 15px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: orangered;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text_box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text_box h1{
+    font-size: 50px;
+}
+.text_box p{
+    margin: 10px 0 40px;
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing: 6px;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 18px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: red;
+}
+
+.hero-btn:hover{
+    border: 1px solid red;
+    background: #0040ff;
+    transition: 1s;
+}
+
+footer{
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    /* padding: 30px;
+    margin-bottom: 25px; */
+    color: black;
+    border: 1px solid red;
+} 
+
+
+.last{
+    background-color: white;
+    position: relative;
+    top: 700px;
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding: 50px;
+    margin-bottom: 25px;
+    color:rgba(0, 0, 0, 0.699);
+    line-height: 1.8rem;
+    word-spacing: 0.5rem;
+    
+}
+.last p{
+    font-size: 18px;
+}
+.about{
+    color: black;
+    font-weight: 900;
+    font-size: 35px;
+    font-style: normal;
+}
+
+
+/* For program Length */
+.program-length{
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    position: relative;
+    float: left;
+    
+}
+.program-length h2{
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #0078D7;
+}
+.program-length p{
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
+    line-height: 2rem;
+    
+}
+.program-length ul{
+    list-style-type: square;
+    text-align: center;
+    padding-left: 100px;
+    font-size: 18px;
+}
+
+.details{
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #0078D7;
+
+}
+.extra{
+    max-width: 630px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    position: relative;
+    float: right;
+}
+.extra p{
+    text-align: center;
+    font-size: 18px;
+    line-height: 2rem;
+    
+}
+
+.list{
+    list-style-type: square;
+    text-align: left;
+    text-decoration: none;
+    background-color: lightgray;
+    
+    color: black;
+    width: 180px;
+    padding: 40px;
+    margin-left: 20px;
+    padding-left: 100px;
+    font-size: 18 px;
+    line-height: 2rem;
+    border-radius: 20%; 
+    /* border: 3px solid black; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+.program{
+    color: red;
+}
+.connect{
+    color: #0040ff;
+    padding-top: 150px;
+    text-align: right;
+}
+
+.course{
+    align-items: center;
+    text-align: center;
+    margin-top:400px;
+}
+
+.course h2{
+    color: black;
+    font-size: 70px;
+    text-align: center;
+    position: relative;
+    margin-bottom:20px;
+}
+
+.course p{
+    color: #555;
+    font-size: 25px;
+    text-align: center;
+}
+
+/* photo gallery */
+.photo-gallery{
+    display: inline-block;
+    position: relative;
+
+}
+/* Photo Gallery Styling */
+photo-gallery {
+    display: flex; /* Flexbox for horizontal alignment */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    justify-content: center; /* Center-aligns images */
+    gap: 50px; /* Adds spacing between images */
+    padding: 20px;
+}
+
+photo-gallery img {
+    width: 22%; /* Each image takes 22% of the container on large screens */
+    max-width: 100%; /* Ensures images don’t overflow */
+    border-radius: 15px; /* Rounded corners */
+    /* border-color: 2px 4px 6px solid #0040ff;
+    box-shadow: 0 4px 6px blue;  */
+    /* Adds depth with shadow */
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    object-fit: cover; /* Ensures consistent image scaling */
+    transition: transform 0.3s ease; /* Adds hover effect */
+}
+
+
+/* Photo Gallery Styling */
+.photo-gallery {
+    display: flex; /* Flexbox layout */
+    flex-wrap: wrap; /* Enables wrapping on smaller screens */
+    justify-content: center; /* Center-aligns the content */
+    gap: 20px; /* Adds spacing between items */
+    padding: 20px;
+}
+
+.photo-gallery figure {
+    flex: 1 1 calc(25% - 20px); /* Each item takes up 25% minus the gap */
+    max-width: 25%; /* Ensures a maximum width of 25% */
+    text-align: center; /* Centers the text below the image */
+    margin: 0; /* Removes default figure margins */
+}
+
+.photo-gallery img {
+    width: 100%; /* Makes the image fill the figure container */
+    border-radius: 8px; /* Adds rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+    object-fit: cover; /* Ensures consistent scaling */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.photo-gallery img:hover {
+    transform: scale(1.05); /* Slightly enlarges image on hover */
+}
+
+.photo-gallery figcaption {
+    margin-top: 10px; /* Space between image and caption */
+    font-size: 14px;
+    color: black; /* Subtle color for the caption */
+    text-align: left;
+}
+
+.photo-gallery button{
+text-align: left;
+background-color: #555;
+position: relative;
+} 
+
+.button{
+    color: red;
+    text-align: left;
+}
+
+.blue {
+    /* border-color: 2px 4px 6px solid #0040ff; */
+    box-shadow: 0 2px 10px blue; 
+}
+
+
+.red {
+    /* border-color: 2px 4px 6px solid red; */
+    box-shadow: 0 2px 10px red; /* Adds depth with shadow */
+}
+
+
+
+
+.photo-gallery img:hover {
+    transform: scale(1.05); /* Slightly enlarges image on hover */
+}
+
+
+/* Style all font awesome icons */
+.fa {
+    padding: 2px;
+    font-size: 40px;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook, .fa-instagram, .fa-youtube, .fa-tiktok {
+    color: white;
+  }
+
+
+
+/* 
+  .fa-instagram {
+    color: rgba(255, 13, 0, 0.317);
+  }
+ 
+  .fa-youtube {
+    color: red;
+  }
+ 
+  .fa-tiktok {
+    color: rgba(97, 2, 175, 0.66);
+    
+  }
+   */
+footer{
+    background-color: #555;
+    height: auto;
+    width: auto;
+    position: relative;
+    top: 1000px;
+}
+
+/* .copy{
+    margin: 25px;
+    font-weight: lighter;
+    padding: 50px;
+} */
+
+
+
+/* 
+
+@media only screen and (max-width: 805px){
+
+    .text_box{
+        width: 90%;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .text_box h1{
+        font-size: 30px;
+    }
+    .text_box p{
+        margin: 10px 0 40px;
+        font-size: 14px;
+        color: #fff;
+        line-height: 1.4rem;
+        font-family: Arial, Helvetica, sans-serif;
+        word-spacing: 3px;
+    }
+
+    footer{
+        background-color: #0040ff;
+        text-align: center;
+        width: auto;
+        padding: 30px;
+        margin-bottom: 25px;
+        color: white;
+        border: 1px solid red;
+    }
+
+} */
