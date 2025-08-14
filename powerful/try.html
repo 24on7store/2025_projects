@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Result Submit</title>
+</head>
+<body>
+  <h1>Submit Quiz Result</h1>
+  <form id="quizForm">
+    <label>Name:
+      <input type="text" id="name" name="name" required>
+    </label><br><br>
+    <label>Score:
+      <input type="number" id="score" name="score" required>
+    </label><br><br>
+    <label>Level:
+      <select id="level" name="level">
+        <option value="A1">A1</option>
+        <option value="A2">A2</option>
+        <option value="B1">B1</option>
+        <option value="B2">B2</option>
+        <option value="C1">C1</option>
+        <option value="C2">C2</option>
+      </select>
+    </label><br><br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="response"></p>
+
+  <script>
+    document.getElementById("quizForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value;
+      const score = document.getElementById("score").value;
+      const level = document.getElementById("level").value;
+
+      const formData = new FormData();
+      formData.append("name", name);
+      formData.append("score", score);
+      formData.append("level", level);
+
+      fetch("https://script.google.com/macros/s/AKfycbxVFgGKg3bawsWfoIIKzfvJMsek649zWmSG4ecZwpW0GFk__LZ5aUDmyY83s919fYB2Sg/exec", {
+        method: "POST",
+        body: formData
+      })
+      .then(res => res.text())
+      .then(text => {
+        document.getElementById("response").innerText = text;
+      })
+      .catch(err => {
+        document.getElementById("response").innerText = "Error: " + err;
+      });
+    });
+  </script>
+</body>
+</html>

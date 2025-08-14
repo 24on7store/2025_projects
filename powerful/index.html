@@ -5,24 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Of PEI</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/small-screen.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" 
     rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
 </head>
 
 
 <body>
 <section class="header">
-    <nav>
+    <nav class="header2">
         <a href="pei.html"><img src="images/logor.png"></a>
         <div class="nav-links" id="navLinks">
         <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">ABOUT</a></li>
-                <li><a href="">COURSE</a></li>
-                <li><a href="">BLOG</a></li>
-                <li><a href="">CONTACT</a></li>
+                <li><a href="index.html">Home </a></li>
+                <li><a href="program.html">The Program</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="test.html">Placement Test</a></li>
+                <!-- <li><a href="About.html">About Us</a></li> -->
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="book.html">&#128722 Buy The Book</a></li>
                 <!-- <li><a href="">RESOURCES</a></li>-->
             </ul>
             
@@ -35,7 +41,7 @@
     <p>We are here to help you learn and improve your English. <br>
     Whether you are just starting or looking to get better, we have courses to help you every step of the way. <br>
     Take a look at our programs and join us today to start learning</p>
-    <a href="" class="hero-btn">Read To Know More About Us</a>
+    <a href="about.html" class="hero-btn">Read To Know More About Us</a>
 
 </div>
 </section>
@@ -43,9 +49,13 @@
 
 <!-- --------------Course--------------- -->
 <section class="course">
-    <h1>Program Length</h1>
-    <p>If you start from A1 and complete all the levels up to C2, 
-    it will take 24 months. <br>Join us at any level and see your English improve step by step, a level in 4 months.</p>
+
+    <div class="program">
+
+        <h1>Program Length</h1>
+        <p>If you start from <b>A1</b> and complete all the levels up to <b>C2</b>, 
+        it will take <b>24 months</b>. <br>Join us at any level and see your English improve step by step, a level in <b>4 months</b></p>
+    </div>
 
     <div class="row">
         <div class="course-col">
@@ -54,6 +64,8 @@
                 your family, and everyday life. You can introduce yourself, 
                 ask and answer simple questions, and understand very basic conversations.
             </p>
+            <!-- <p id="beginner"></p>
+            <button type="button" onclick="myFunction()">Click To Know What You Will Learn in this Level...</button> -->
         </div>
 
         <div class="course-col">
@@ -94,9 +106,9 @@
 
 <!-- --------------Program--------------- -->
 <section class="course2">
-    <h1>Course We Offer</h1>
+    <h1>Courses We Offer</h1>
     <p>We have courses for every level. <br>
-        Our programs are designed to fit your learning level and progress in just 4 months
+        Our programs are designed to fit <br>your learning level and progress in just <b>4 months!</b>
     </p>
 
     <div class="row">
@@ -133,17 +145,191 @@
 </section>
 
 
+<section class="quiz">
+    <h2>Would You Like To Know Your Current English Level?</h2>
+    <p>Understanding your current English proficiency is the first step toward meaningful improvement.
+    Whether <br>you're a beginner or an advanced<br> learner,  our placement test is designed to give you a clear picture
+    of where you stand. <br>
+    By taking this short and simple test, You will receive personalized guidance on where to start,
+    what to focus on, and how to move forward efficiently in your language journey!</p>
+    <a href="test.html" class="quiz-btn">Take the Test</a>
+
+</section>
+
+<!-- Contact Form Section -->
+<section class="contact-form">
+    <!-- <h2>Send Us An Email</h2>
+    <hr> -->
+
+    <div class="contact-container">
+        
+        <div class="cta">
+            <!-- <h2>Good To Know</h2> -->
+            <p>We, <b>the PEI Staff,</b> warmly invite you to begin your journey today. 
+                Don't hesitate to make a choice that could completely change your 
+                life for the better. Learning a new language in today’s fast-changing world 
+                opens many doors. It helps you get better jobs, meet new people, and understand 
+                different cultures. If you don’t know where to start, that’s totally okay—we are 
+                here to guide and support you every step of the way. Just let us know how we can help. 
+                Take a moment to fill out the form  and we’ll get back to you as soon as possible.</p>
+
+                <p><b>No matter your background or skill level, you are welcome.</b>
+                    Everyone learns at their own pace, and we are proud to walk with you on this path. 
+                    We believe in your potential, and we’re excited to see where this journey takes you.
+                    Let us know how we can assist you with today. <b> To do so, just fill out this form. <span class="arrow">&#8594;</span></b></p>
+    
+        <!-- <div class="photo">
+            <img src="images/jm.jpg" alt="Pic of Johnsley">
+        </div> -->
+
+        </div>
+
+        
+        <form action="https://formsubmit.co/mackisonjeanpierre90@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <!-- <input type="hidden" name="_next" value="https://powerful.com"> -->
+        <input type="hidden" name="_next" value="success.html">
+
+
+        <h2>Send Us An Email</h2>
+        <hr class="section-divider">
+        <!-- name and email go here -->
+        <div class="form-row">
+            <div class="form-group">
+                <!-- <label for="name">Name</label> -->
+                <input type="name" id="name" name="name" placeholder="Name">
+            </div>
+
+            <div class="form-group">
+                <!-- <label for="email">Email</label> -->
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+        </div>
+
+
+
+        <!-- phone and subject go here -->
+        <div class="form-row">
+            <div class="form-group">
+            <!-- <label for="phone">Phone Number</label> -->
+            <input type="tel" id="phone" placeholder="Phone Number" name="phone">
+        </div>
+
+            <div class="form-group">
+                <!-- <label for="subject">Subject</label> -->
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            </div>
+        </div>
+
+        <!-- Message codes go here -->
+        <div class="form-group full-width">
+            <!-- <label for="message">Message</label> -->
+            <textarea id="message" name="message" rows="7"  placeholder="Type the message here" required></textarea>
+        </div>
+
+
+
+
+        <!-- <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br> -->
+    <!-- 
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+        <label for="subject">Subject:</label><br>
+        <input type="text" id="subject" name="subject" required><br><br> -->
+
+        <!-- <label for="message">Message</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br> -->
+
+        <button type="submit">Send Message</button>
+        </form>
+<!-- 
+        <div class="cta">
+            <p>We, PEI Staff, invite you to start your journey today. Don't be reluctant to make a decision that can drastically
+            change your life. Learning a new language in this changing world is like preparing for more opportunities. 
+            Don't know where to start? That is totally okay as we have your back.  Let us know we can assist you with today by just fill 
+            out this form
+        </p>
+        </div> -->
+    </div>
+</section>
+
+
     
 <!-- ---------------JavaScript for Toggle Menu------------ -->
-<script>
-    var navLinks = document.getElementById("navLinks");
+<script src="scripts/script.js"></script>
 
-    function showMenu(){
-        navLinks.style.right = "0"
-    }
-    function hideMenu(){
-        navLinks.style.right = "-200px"
-    }
-</script>
+<footer>
+    <div class="info-sections">
+        
+        <div class="about-us">
+            <a href="about.html"></a>
+            <h2>Read More About PEI</h2>
+            <p>At <i>Powerful English Institute</i>, we believe that 
+                learning English opens doors to endless opportunities.
+                Founded in <b>2017</b> by <b>Johnsley MEJUSTIN</b> our mission has always been 
+                to help students from all walks of life gain the confidence and skills 
+                they need to speak, read, and write English fluently. <br>
+                
+                We offer both in-person and online classes to fit your lifestyle and schedule. 
+                Whether you prefer face-to-face interaction or the flexibility of learning from anywhere, 
+                we are here to support you every step of the way.
+                
+                With a team of passionate teachers and a friendly learning environment, 
+                we make English simple, practical, and powerful. 
+                Join us today and take your English to the next level!</p>
+        </div>
+
+        <div class="staff">
+            <h2>Meet The Staff</h2>
+            <p>Johnsley <span class="role"> MEJUSTIN</span></p>
+            <p>Benjamin <span class="role"> FORTUNE</span></p>
+            <p>Jeff <span class="role"> DORCINE</span></p>
+            <p>Guinelson <span class="role"> FONTUS</span></p>
+            <p>Jhon Wenstyvenson<span class="role"> CADELIS</span></p>
+            <p>Rood Van Nistel <span class="role"> STERLING</span></p>
+            <p>Jackyto <span class="role"> MEJUSTIN</span></p>
+        </div>
+
+
+        <div class="icons">
+            <h2>Connect With Us</h2>
+            <p>Click on the social media icon via<br>
+                which you would like to contact <br>
+            <b>PEI</b> (Powerful English Institute) <br>
+            It is always a pleasure to read you.</p>
+            <a href="https://www.facebook.com/johnsley.mejustin.5?rdid=GBKd1ueNwG1BSUzb&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F19YRATpehW%2F#">
+            <i class="fa-brands fa-facebook"></i>
+            </a>
+            
+            <a href="https://www.instagram.com/johnsleymeju/profilecard/?igsh=OGloNGR0dGt2MnVh">
+            <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://www.tiktok.com/@johnsleymejustin5?_t=8r7KEBJfdAE&_r=1">
+            <i class="fa-brands fa-tiktok"></i>
+            </a>
+            
+            <a href="https://www.youtube.com/@johnsleymejustin3965">
+            <i class="fa-brands fa-youtube"></i>
+            </a>
+            
+            <a href="https://api.whatsapp.com/send?phone=5619175516">
+            <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <p><b>&copy; 2025 PEI. All rights reserved.</b></p>
+            <p><b>Developer:</b> Mackison <b>JEAN PIERRE</b> <br>
+            <b>Text Editors:</b> Johnsley <b>MEJUSTIN</b> & <br> Mackison <b>JEAN PIERRE</b></p>
+        </div>
+
+    </div>
+</footer>
+
+
+
 </body>
 </html>
