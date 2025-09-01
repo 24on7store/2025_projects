@@ -108,8 +108,7 @@ nav .fa{
 
 .book p{
     font-size: 20px;
-    color: gray;
-    font-weight: bolder;
+    color: black;
     margin-bottom: 5px;
     column-count: 2;
     text-align: left;
@@ -267,6 +266,11 @@ footer{
 /* ---------------------------------------------------------------------------------------- */
 /* For Small devices */
 @media(max-width: 768px) {
+        html, body{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
     .nav-links ul li{
         display: block;
     }
@@ -330,8 +334,8 @@ footer{
 
 .book p{
     font-size: 16px;
-    color: gray;
-    font-weight: bolder;
+    /* color: gray; */
+    /* font-weight: bolder; */
     margin-bottom: 5px;
     column-count: 1;
     text-align: center;

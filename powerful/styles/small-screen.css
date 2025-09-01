@@ -1,6 +1,11 @@
 /* ---------------------------------------------------------------------------------------- */
 /* For Small devices */
 @media(max-width: 768px) {
+    html, body{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
     .text-box h1{
         font-size: 20px;
         position: relative;
@@ -8,9 +13,10 @@
     }
 
     .text-box p{
-        font-size: 13px;
+        font-size: 15px;
         /* word-spacing: 5px;
         line-height: 2rem; */
+        line-height: 1.6rem;
         position: relative;
         bottom: 10px;
         margin: 10px 0 40px;
@@ -21,21 +27,24 @@
         padding: 12px 34px;
         text-decoration: none;
         color: #fff;
-        font-size: 13px;
+        font-size: 15px;
         font-weight: bolder;
-        border: 2px solid #fff;
+        border: 2px solid blue;
         /* word-spacing: 2px; 
         letter-spacing: 1px; */
-        background: transparent;
+        background: red;
         position: relative;
         cursor: pointer;
     }
     
-    .hero-btn:hover{
+    .header img{
+        z-index: 2;
+    }
+    /* .hero-btn:hover{
         background: red;
         border: 2px solid red;
         transition: 1s;
-    }
+    } */
     .nav-links ul li{
         display: block;
     }
@@ -320,7 +329,7 @@ h3{
         height: auto; 
         background-color: silver;
         /* padding: 10px 20px; */
-        background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(../images/backgroundnew2.jpg);
+        background-image: linear-gradient(rgba(4,9,30,0.9),rgba(4,9,30,0.9)),url(../images/backgroundnew2.jpg);
         background-size: cover;
         background-position-x: scale(-1);
         position: relative;
@@ -480,6 +489,7 @@ h3{
         height: auto;
         line-height: 2rem;
         text-align: center;
+        font-weight: lighter;
     }
 
     .arrow{
@@ -533,20 +543,26 @@ h3{
 .about-us p {
     column-count: 1;         /* Switch from 2 columns to 1 */
     min-width: auto;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 2rem;
+    /* word-spacing: 0.1rem; */
     text-align: center;
     color: #fff;
-    font-weight: lighter;
+    font-weight: 300;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .staff p {
     position: relative;
-    text-align: center;
+    justify-content: center;
+    text-align: justify;
     align-items: center;
+    left: 265px;
+    padding: 0;
 }
 
 .staff h2{
+    text-align: center;
     position: relative;
     color: white;
     left: 0;
@@ -560,6 +576,7 @@ h3{
     position: relative;
     right: 200px;
 }
+
 
 /* .staff h2 {
   color: #f44336;

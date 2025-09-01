@@ -174,8 +174,10 @@ nav .fa{
     line-height: 1.4rem;
     /* text-shadow: 30px 0px 50px black; */
     word-spacing: 0.1rem;
-    color: gray;
+    color: black;
+    /* font-weight: light; */
     font-weight: light;
+    font-family: 'Courier New', Courier, monospace
     
 } 
 
@@ -199,6 +201,8 @@ nav .fa{
     justify-content: center;
     align-items: center;
     box-shadow: 5px 10px 10px 5px black;
+    font-weight: lighter;
+    font-family: 'Courier New', Courier, monospace
 
 }
 
@@ -256,10 +260,12 @@ nav .fa{
 
 
 label{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bolder;
     margin-left: 15px;
     border: none;
+    font-weight: lighter;
+    font-family: 'Courier New', Courier, monospace
 }
 
 #username, #email, #whatsapp{
@@ -290,9 +296,9 @@ label{
     text-align: left;
     margin-top: 25px;
     font-size: 18px;
-    color: black;
-    font-weight: bolder;
+    font-weight: 900;
     color:green;
+    font-family: 'Courier New', Courier, monospace
 }
 
 
@@ -324,6 +330,7 @@ label{
     margin-right: 580px; /* space between buttons */
     font-size: 15px;
     font-weight: bold;
+    margin-top: 20px;
 }.next-btn {
     background-color: blue;
     color: white;
@@ -332,6 +339,8 @@ label{
     cursor: pointer;
     font-size: 15px;
     font-weight: bold;
+    margin-top: 20px;
+
 }
 
 /* Optional hover effect */
@@ -431,6 +440,11 @@ footer{
 /* ---------------------------------------------------------------------------------------- */
 /* For Small devices */
 @media(max-width: 768px) {
+        html, body{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
     .nav-links ul li{
         display: block;
     }
@@ -537,7 +551,8 @@ footer{
     line-height: 1.4rem;
     /* text-shadow: 30px 0px 50px black; */
     word-spacing: 0.1rem;
-    font-weight: light;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
     /* flex-direction: column; */
     
 } 
@@ -670,7 +685,7 @@ footer{
 label{
     justify-content: center;
     align-items: center;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600px;
     /* margin-left: 10px; */
     border: none;
@@ -682,6 +697,8 @@ label{
     /* gap: 10px; */
     text-align: left;
     margin-bottom: 0;
+    font-weight: lighter;
+    font-family: 'Courier New', Courier, monospace
 }
 
 
@@ -723,6 +740,7 @@ label{
     flex-direction: column;
     gap: 10px;
     color: green;
+    font-family: 'Courier New', Courier, monospace
 }
 
 /* .quiz-options{
@@ -806,6 +824,7 @@ label{
     font-weight: 300;
     font-family: 'Courier New', Courier, monospace;
 }
+
 
 .staff p {
     position: relative;

@@ -95,11 +95,13 @@ nav img{
 }
 .text-box p{
     font-size: 18px;
-    word-spacing: 5px;
+    /* word-spacing: 5px; */
     line-height: 2rem;
     position: relative;
     bottom: 20px;
     margin: 10px 0 40px;
+    color: white;
+    word-spacing: 0.4rem;
 }
 
 .hero-btn{
@@ -244,21 +246,22 @@ h3{
     padding-top: 1px;
 }
 
-.course2 h1{
+.courses{
     color: white;
     background-color: black;
     display: inline;
     padding: 4px 45px;
     border-radius: 45%;
     font-weight: bolder;
-    font-size: 35px;
+    font-size: 25px;
     z-index: 2;
     position: relative;
     top: 40px;
     text-shadow: 15px 10px 10px black;
+    text-decoration: none;
 }
 
-.course2 h1:hover {
+.courses:hover {
     background-color: blue;
     text-shadow: 15px 10px 10px blue;
 }
@@ -593,9 +596,12 @@ h3{
 } */
 
 .about-us p{
+    font-size: 14px;
     min-width: 450px;
     color: grey;
     column-count: 2;
+    word-spacing: 0.4rem;
+    line-break: 2.4rem;
     
 }
 

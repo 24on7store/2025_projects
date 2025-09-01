@@ -54,241 +54,519 @@
 const questions = [
   {
     q: "What is your name?",
-    a: "My name is Anna",
-    options: ["I name is Anna", "My name is Anna", "Me is Anna", "I am name Anna"]
+    a: "A) My name is Anna",
+    options: ["A) I name is Anna", "B) My name is Anna", "C) Me is Anna", "D) I am name Anna"]
   },
   {
     q: "She ___ a student.",
-    a: "is",
-    options: ["are", "is", "am", "be"]
+    a: "B) is",
+    options: ["A) are", "B) is", "C) am", "D) be"]
   },
   {
     q: "I ___ in New York.",
-    a: "live",
-    options: ["living", "live", "lives", "am live"]
+    a: "B) live",
+    options: ["A) living", "B) live", "C) lives", "D) am live"]
   },
   {
-    q: "The committee reached a ___ decision.",
-    a: "unanimous",
-    options: ["unanimous", "universal", "unified", "uniform"]
+    q: "What time ___ it.",
+    a: "C) is",
+    options: ["A) are", "B) do", "C) is", "D) has"]
   },
   {
-    q: "He arrived ___ the airport at 8 PM.",
-    a: "at",
-    options: ["on", "in", "at", "by"]
+    q: "Choose the correct sentence:",
+    a: "C) He doesn't like pizza.",
+    options: ["A) He not like pizza", "B) He don't like pizza", "C) He doesn't like pizza", "D) He doesn't likes pizza"]
   },
   {
-    q: "Choose the correct past tense: 'She ___ to the store yesterday.'",
-    a: "went",
-    options: ["go", "goes", "went", "gone"]
+    q: "We ___  from Canada.",
+    a: "A) are",
+    options: ["A) are", "B) is", "C) am", "D) be"]
   },
   {
-    q: "If it rains, we ___ inside.",
-    a: "will stay",
-    options: ["stay", "stayed", "will stay", "staying"]
+    q: "I have ___ apple.",
+    a: "A) an",
+    options: ["A) an", "B) a", "C) the", "D) one"]
   },
   {
-    q: "Identify the adjective: 'The tall man ran fast.'",
-    a: "tall",
-    options: ["man", "tall", "ran", "fast"]
+    q: "____ is your favorite color?",
+    a: "C) what",
+    options: ["A) who", "B) where", "C) what", "D) where"]
   },
   {
-    q: "Which sentence is correct?",
-    a: "She has two cats.",
-    options: ["She have two cats.", "She has two cats.", "She has two cat.", "She had two cat."]
+    q: "Today is ____ Monday.",
+    a: "C) The",
+    options: ["A) a", "B) an", "C) the", "C) some"]
   },
   {
-    q: "What’s the plural of 'child'?",
-    a: "children",
-    options: ["childs", "child", "children", "childes"]
+    q: 'The opposite of "big" is?',
+    a: "C) small",
+    options: ["A) short", "B) long", "C) small", "D) tall"]
   },
   {
-    q: "Which word is a verb?",
-    a: "run",
-    options: ["happy", "quick", "run", "blue"]
+    q: "I ____ coffee every morning.",
+    a: "A) drink",
+    options: ["A) drink", "B) drinks", "C) drinking", "D) am drink"]
   },
   {
-    q: "He ___ watching TV when I arrived.",
-    a: "was",
-    options: ["is", "are", "was", "were"]
+    q: "She ____ a car.",
+    a: "C) has",
+    options: ["A) have", "B) haves", "C) has", "D) is have"]
+  },
+    {
+    q: "They ____ at home now.",
+    a: "B) are",
+    options: ["A) is", "B) are", "C) do", "D) be"]
   },
   {
-    q: "We ___ dinner at 7 PM every day.",
-    a: "have",
-    options: ["has", "have", "having", "had"]
+    q: 'What is the plural of "child"?',
+    a: "B) children",
+    options: ["A) childs", "B) children", "C) childrens", "D) childes"]
   },
   {
-    q: "They ___ to school yesterday.",
-    a: "went",
-    options: ["go", "went", "gone", "going"]
+    q: "It ____ cold today.",
+    a: "C) is",
+    options: ["A) are", "B) am", "C) is", "D) be"]
   },
   {
-    q: "I have never ___ sushi.",
-    a: "eaten",
-    options: ["eat", "ate", "eaten", "eating"]
+    q: "I go to school ____ bus.",
+    a: "B) by",
+    options: ["A) in", "B) by", "C) on", "D) with"]
   },
   {
-    q: "Choose the correct form: 'He ___ working all day.'",
-    a: "has been",
-    options: ["have been", "has been", "was", "had"]
+    q: " ____ you like pizza?",
+    a: "A) Do",
+    options: ["A) Do", "B) Are", "C) Does", "D) Have"]
+  },
+  //Elementary - 17 to 34
+  {
+    q: "I am good ____ playing guitar.",
+    a: "A) at",
+    options: ["A) at", "B) in", "C) on", "D) with"]
   },
   {
-    q: "What is the comparative form of 'good'?",
-    a: "better",
-    options: ["gooder", "more good", "better", "best"]
+    q: "She speaks English ____ than me.",
+    a: "B) better",
+    options: ["A) good", "B) better", "C) best", "D) more good"]
   },
   {
-    q: "Which sentence uses the future perfect tense?",
-    a: "She will have left by then.",
-    options: ["She leaves at noon.", "She is leaving now.", "She will have left by then.", "She left earlier."]
+    q: "There ____ some books on the table.",
+    a: "B) are",
+    options: ["A) is", "B) are", "C) has", "D) have"]
   },
   {
-    q: "What part of speech is 'quickly'?",
-    a: "adverb",
-    options: ["noun", "verb", "adjective", "adverb"]
+    q: "What do you do?",
+    a: "C) I am a teacher",
+    options: ["A) I student", "B) I am teacher", "C) I am a teacher", "D) I working"]
   },
   {
-    q: "Which sentence is passive voice?",
-    a: "The cake was eaten by the children.",
-    options: [
-      "The children ate the cake.",
-      "The cake was eaten by the children.",
-      "The children have eaten the cake.",
-      "The cake is eating by children."
-    ]
+    q: "Can you swim?",
+    a: "A) Yes, I can.",
+    options: ["A) Yes, I can.", "B) Yes, I do.", "C) Yes, I am.", "D) Yes, I have."]
   },
   {
-    q: "Pick the correct sentence.",
-    a: "There are five apples in the basket.",
-    options: [
-      "There is five apples in the basket.",
-      "There are five apple in the basket.",
-      "There are five apples in the basket.",
-      "There is five apple in basket."
-    ]
+    q: "She ____ to work by car.",
+    a: "C) goes",
+    options: ["A) go", "B) going", "C) goes", "D) gone"]
   },
   {
-    q: "What is the superlative form of 'happy'?",
-    a: "happiest",
-    options: ["more happy", "most happy", "happiest", "happyest"]
+    q: "I ____ never been to London.",
+    a: "A) have",
+    options: ["A) have", "B) has", "C) had", "D) did"]
   },
   {
-    q: "Which conjunction best completes the sentence? 'I studied hard ___ I passed.'",
-    a: "so",
-    options: ["so", "but", "because", "or"]
+    q: "We didn't ____ the movie.",
+    a: "C) watch",
+    options: ["A) watching", "B) watched", "C) watch", "D) to watch"]
   },
   {
-    q: "What is the noun in the sentence: 'Cats sleep a lot'?",
-    a: "Cats",
-    options: ["Cats", "sleep", "lot", "a"]
+    q: 'The past tense of "take" is:',
+    a: "B) took",
+    options: ["A) taked", "B) took", "C) token", "D) taken"]
   },
   {
-    q: "Choose the correct article: '___ apple a day keeps the doctor away.'",
-    a: "An",
-    options: ["A", "An", "The", "No article"]
+    q: "I  ____  a shower every morning.",
+    a: "C) take",
+    options: ["A) am take", "B) takes", "C) take", "D) taking"]
   },
   {
-    q: "What is the antonym of 'generous'?",
-    a: "selfish",
-    options: ["kind", "giving", "selfish", "humble"]
+    q: "He is the  ____ person I know.",
+    a: "D) nicest",
+    options: ["A) nice", "B) nicer", "C) most nice", "D) nicest"]
   },
   {
-    q: "Pick the correct spelling.",
-    a: "necessary",
-    options: ["neccessary", "necessary", "necesary", "nessesary"]
+    q: "I am looking ____ my keys.",
+    a: "C) for",
+    options: ["A) to", "B) with", "C) for", "D) at"]
   },
   {
-    q: "What tense is this: 'I had eaten before you arrived'?",
-    a: "past perfect",
-    options: ["past", "present perfect", "past perfect", "future perfect"]
+    q: "How ____ sugar do you want?",
+    a: "B) much",
+    options: ["A) many", "B) much", "C) more", "D) less"]
   },
   {
-    q: "He ___ to play the guitar.",
-    a: "knows how",
-    options: ["know how", "knows how", "knew how", "known how"]
+    q: "I am interested ____ football.",
+    a: "C) in",
+    options: ["A) on", "B) about", "C) in", "D) at"]
   },
   {
-    q: "Choose the synonym for 'big'.",
-    a: "large",
-    options: ["small", "tiny", "large", "thin"]
+    q: "I ____ go to the gym, but now I don't.",
+    a: "A) used",
+    options: ["A) used", "B) use", "C) using", "D) use to"]
   },
   {
-    q: "Which is a question tag? 'You're coming, ___?'",
-    a: "aren't you",
-    options: ["isn't it", "don't you", "aren't you", "are you"]
+    q: "We have lived here ____ five years.",
+    a: "B) for",
+    options: ["A) since", "B) for", "C) in", "D) during"]
   },
   {
-    q: "Complete the sentence: 'I prefer tea ___ coffee.'",
-    a: "to",
-    options: ["than", "from", "to", "with"]
+    q: "Where ____ you go on vacation last year?",
+    a: "A) did",
+    options: ["A) did", "B) do", "C) were", "D) had"]
+  },
+  // B1 Intermediate - 35 to 50 I stop here
+  {
+    q: "If I have time, I ___ help you.",
+    a: "A) will",
+    options: ["A) will", "B) would", "C) can", "D) did"]
   },
   {
-    q: "Which sentence is correct?",
-    a: "Does she work here?",
-    options: ["Do she work here?", "Does she works here?", "Does she work here?", "Work she does here?"]
+    q: "She’s ___ than her sister.",
+    a: "C) more intelligent",
+    options: ["A) intelligent", "B) most intelligent", "C) more intelligent", "D) intelligenter"]
   },
   {
-    q: "Choose the correct verb form: 'Neither of them ___ going.'",
-    a: "is",
-    options: ["are", "were", "is", "am"]
+    q: "I haven’t seen her ___ Monday.",
+    a: "B) since",
+    options: ["A) for", "B) since", "C) in", "D) on"]
   },
   {
-    q: "What is the plural of 'mouse'?",
-    a: "mice",
-    options: ["mouses", "mouse", "mices", "mice"]
+    q: "They were tired ___ they had worked all day.",
+    a: "B) because",
+    options: ["A) so", "B) because", "C) but", "D) then"]
+
   },
   {
-    q: "Which is an exclamatory sentence?",
-    a: "What a beautiful day!",
-    options: ["Close the door.", "What a beautiful day!", "Are you okay?", "I am tired."]
+    q: "I’d rather ___ at home tonight.",
+    a: "A) stay",
+    options: ["A) stay", "B) staying", "C) to stay", "D) stays"]
+  },
+  // NEW FORMAT
+  {
+    q: "I was reading when he ___ in.",
+    options: ["A) comes", "B) come", "C) came", "D) had come"],
+    a: "C) came"
   },
   {
-    q: "Choose the correct punctuation: 'Lets eat Grandma!'",
-    a: "Let’s eat, Grandma!",
-    options: ["Lets eat Grandma!", "Let's eat Grandma!", "Let’s eat, Grandma!", "Let’s, eat Grandma!"]
+    q: "We’ve already ___ dinner.",
+    options: ["A) ate", "B) eaten", "C) eat", "D) eating"],
+    a: "B) eaten"
   },
   {
-    q: "Select the correct homophone pair.",
-    a: "pair – pear",
-    options: ["sea – see", "pair – pear", "bare – bear", "write – right"]
+    q: "Would you mind ___ the window?",
+    options: ["A) to open", "B) opening", "C) open", "D) opened"],
+    a: "B) opening"
   },
   {
-    q: "What is the base form of 'ran'?",
-    a: "run",
-    options: ["running", "runned", "ran", "run"]
+    q: "I don’t know where ___ my phone.",
+    options: ["A) I left", "B) did I leave", "C) have I left", "D) I have left"],
+    a: "A) I left"
   },
   {
-    q: "Which is a compound word?",
-    a: "toothbrush",
-    options: ["tooth", "brush", "toothbrush", "toothy"]
+    q: "I’m used to ___ early.",
+    options: ["A) wake", "B) waking", "C) woke", "D) woken"],
+    a: "B) waking"
   },
   {
-    q: "Which sentence is in the present continuous tense?",
-    a: "She is reading a book.",
-    options: [
-      "She reads books.",
-      "She read a book.",
-      "She is reading a book.",
-      "She has read a book."
-    ]
+    q: "I’ve got too ___ work to do.",
+    options: ["A) many", "B) much", "C) more", "D) lot"],
+    a: "B) much"
   },
   {
-    q: "He didn't come because he was ___.",
-    a: "tired",
-    options: ["tiring", "tired", "tiresome", "tire"]
+    q: "We had fun, ___ the rain.",
+    options: ["A) although", "B) because", "C) if", "D) when"],
+    a: "A) although"
   },
   {
-    q: "Which is the correct word order for a question?",
-    a: "What are you doing?",
-    options: ["You are doing what?", "What doing are you?", "What are you doing?", "Doing what are you?"]
+    q: "Let me know if you ___ any questions.",
+    options: ["A) have", "B) has", "C) had", "D) having"],
+    a: "A) have"
   },
   {
-    q: "Choose the word with a silent letter.",
-    a: "knee",
-    options: ["knee", "name", "kick", "know"]
+    q: "That’s the person ___ car was stolen.",
+    options: ["A) who", "B) ", "C) whose", "D) that"],
+    a: "C) whose"
+  },
+  {
+    q: "She said she ___ come later.",
+    options: ["A) will", "B) can", "C) would", "D) should"],
+    a: "C) would"
+  },
+  {
+    q: "I regret ___ him the truth.",
+    options: ["A) tell", "B) to tell", "C) telling", "D) told"],
+    a: "telling"
+  },
+// B2 (Upper Intermediate - 51 to 67)
+  {
+    q: "It was such a boring movie that I ____ asleep.",
+    options: ["A) fall", "B) fell", "C) fallen", "D) falling"],
+    a: "B) fell"
+  },
+  {
+    q: "She speaks English fluently, ____ she never lived abroad.",
+    options: ["A) although", "B) despite", "C) because", "D) unless"],
+    a: "A) although"
+  },
+  {
+    q: "That’s the restaurant ____ we had dinner.",
+    options: ["A) where", "B) which", "C) that", "D) when"],
+    a: "A) where"
+  },
+  {
+    q: "I wish I ____ more confident when I speak English.",
+    options: ["A) am", "B) have been", "C) was", "D) were being"],
+    a: "C) was"
+  },
+  {
+    q: "They apologized ____ being late.",
+    options: ["A) to", "B) for", "C) about", "D) of"],
+    a: "B) for"
+  },
+  {
+    q: "He denied ____ the window.",
+    options: ["A) break", "B) broke", "C) to break", "D) breaking"],
+    a: "D) breaking"
+  },
+  {
+    q: "I didn’t expect you ____ early.",
+    options: ["A) coming", "B) to come", "C) came", "D) come"],
+    a: "B) to come"
+  },
+  {
+    q: "If I had seen her, I ____ hello.",
+    options: ["A) say", "B) said", "C) would say", "D) would have said"],
+    a: "D) would have said"
+  },
+  {
+    q: "Not only ____ late, but he also forgot the documents.",
+    options: ["A) he arrived", "B) did he arrive", "C) he did arrive", "D) had he arrived"],
+    a: "B) did he arrive"
+  },
+  {
+    q: "I’d rather you ____ smoke here.",
+    options: ["A) don’t", "B) didn’t", "C) won’t", "D) hadn’t"],
+    a: "B) didn’t"
+  },
+  {
+    q: "She talked to me as if I ____ a child.",
+    options: ["A) am", "B) were", "C) was", "D) had been"],
+    a: "B) were"
+  },
+  {
+    q: "I’ll send you the report when I ____ it.",
+    options: ["A) finish", "B) will finish", "C) finishing", "D) finished"],
+    a: "A) finish"
+  },
+  {
+    q: "The manager demanded that he ____ immediately.",
+    options: ["A) left", "B) leaves", "C) leave", "D) had left"],
+    a: "C) leave"
+  },
+  {
+    q: "It’s high time we ____.",
+    options: ["A) go", "B) went", "C) have gone", "D) gone"],
+    a: "B) went"
+  },
+  {
+    q: "I’d like to know what time the meeting is ____.",
+    options: ["A) start", "B) starts", "C) starting", "D) started"],
+    a: "B) starts"
+  },
+  {
+    q: "The film was so moving that I couldn’t help ____.",
+    options: ["A) cry", "B) crying", "C) to cry", "D) cried"],
+    a: "B) crying"
+  },
+  {
+    q: "I regret ____ more time with my grandfather.",
+    options: ["A) to spend", "B) not spending", "C) not to spend", "D) spend"],
+    a: "B) not spending"
+  },
+  // C1 (ADVANCED - 68 to 84)
+  {
+    q: "Rarely ____ such an inspiring speech.",
+    options: ["A) I heard", "B) have I heard", "C) I have heard", "D) did I heard"],
+    a: "B) have I heard"
+  },
+  {
+    q: "The moment he arrived, the audience ____.",
+    options: ["A) was cheering", "B) cheered", "C) had cheered", "D) cheers"],
+    a: "B) cheered"
+  },
+  {
+    q: "Her performance was far ____ expectations.",
+    options: ["A) beyond", "B) behind", "C) after", "D) through"],
+    a: "A) beyond"
+  },
+  {
+    q: "The book, ____ was written in 1890, is still popular today.",
+    options: ["A) which", "B) that", "C) where", "D) whose"],
+    a: "A) which"
+  },
+  {
+    q: "Had I known, I ____ things differently.",
+    options: ["A) will do", "B) would have done", "C) would do", "D) have done"],
+    a: "B) would have done"
+  },
+  {
+    q: "Scarcely ____ the train when it started moving.",
+    options: ["A) had I boarded", "B) I had boarded", "C) I boarded", "D) was I boarding"],
+    a: "A) had I boarded"
+  },
+  {
+    q: "She insisted that he ____ present.",
+    options: ["A) is", "B) be", "C) was", "D) were"],
+    a: "B) be"
+  },
+  {
+    q: "No sooner had they arrived ____ it began to rain.",
+    options: ["A) then", "B) when", "C) than", "D) while"],
+    a: "C) than"
+  },
+  {
+    q: "He’s always been a ____ learner — quick and focused.",
+    options: ["A) tenacious", "B) tense", "C) temporary", "D) tangible"],
+    a: "A) tenacious"
+  },
+  {
+    q: "Her behavior was anything but ____.",
+    options: ["A) acceptable", "B) accepting", "C) accept", "D) acceptance"],
+    a: "A) acceptable"
+  },
+  {
+    q: "This essay is ____ with minor errors.",
+    options: ["A) filled", "B) fraught", "C) combined", "D) influenced"],
+    a: "B) fraught"
+  },
+  {
+    q: "The results were not ____ with our expectations.",
+    options: ["A) consistent", "B) consisted", "C) consist", "D) consisting"],
+    a: "A) consistent"
+  },
+  {
+    q: "She had her car ____ yesterday.",
+    options: ["A) repaired", "B) repair", "C) repairing", "D) to repair"],
+    a: "A) repaired"
+  },
+  {
+    q: "I take issue ____ your last statement.",
+    options: ["A) by", "B) from", "C) with", "D) on"],
+    a: "C) with"
+  },
+  {
+    q: "His accent was barely ____.",
+    options: ["A) noticeable", "B) noticed", "C) notice", "D) noticing"],
+    a: "A) noticeable"
+  },
+  {
+    q: "The judge ruled in ____ of the defendant.",
+    options: ["A) favor", "B) favoring", "C) favors", "D) favorable"],
+    a: "A) favor"
+  },
+  {
+    q: "It’s important that he ____ this before tomorrow.",
+    options: ["A) does", "B) do", "C) did", "D) will do"],
+    a: "B) do"
+  },
+  // C2 Proficient - 85 to 100
+  {
+    q: "The professor’s argument was full of logical ____.",
+    options: ["A) fallacies", "B) falls", "C) failures", "D) faults"],
+    a: "A) fallacies"
+  },
+  {
+    q: "The novelist employs a ____ style of narration.",
+    options: ["A) verbose", "B) verbal", "C) verb", "D) verbally"],
+    a: "A) verbose"
+  },
+  {
+    q: "He is fluent in three languages, not ____ English.",
+    options: ["A) only", "B) just", "C) merely", "D) least"],
+    a: "D) least"
+  },
+  {
+    q: "Her speech was both _____ and impactful.",
+    options: ["A) eloquent", "B) elocution", "C) elevated", "D) elect"],
+    a: "A) eloquent"
+  },
+  {
+    q: "The decision was entirely ____ upon financial matters.",
+    options: ["A) contingent", "B) contained", "C) conformed", "D) conceptual"],
+    a: "A) contingent"
+  },
+  {
+    q: "The witness recanted his ____ testimony.",
+    options: ["A) prior", "B) primary", "C) priorly", "D) prioring"],
+    a: "A) prior"
+  },
+  {
+    q: "His explanation was so ____ that no one questioned it.",
+    options: ["A) cogent", "B) cogitate", "C) cognitive", "D) cohesive"],
+    a: "A) cogent"
+  },
+  {
+    q: "They treated the issue with the utmost ____.",
+    options: ["A) delicacy", "B) delicate", "C) delicateness", "D) delicates"],
+    a: "A) delicacy"
+  },
+  {
+    q: "She was a ____ of truth in a world of deception.",
+    options: ["A) beacon", "B) bacon", "C) beaker", "D) break-in"],
+    a: "A) beacon"
+  },
+  {
+    q: "The findings were ____ to the hypothesis.",
+    options: ["A) detrimental", "B) determinative", "C) determined", "D) detained"],
+    a: "A) detrimental"
+  },
+  {
+    q: "He’s an ____ speaker; he rarely prepares notes.",
+    options: ["A) impromptu", "B) impassioned", "C) extemporaneous", "D) extreme"],
+    a: "C) extemporaneous"
+  },
+  {
+    q: "The essay was marked by a ____ use of metaphor.",
+    options: ["A) judicious", "B) judicial", "C) justice", "D) judgment"],
+    a: "A) judicious"
+  },
+  {
+    q: "His actions were in ____ violation of the rules.",
+    options: ["A) blatant", "B) blunt", "C) bluntly", "D) blank"],
+    a: "A) blatant"
+  },
+  {
+    q: "The theory remains ____ and unchallenged.",
+    options: ["A) unassailable", "B) unattainable", "C) unapproachable", "D) unspeakable"],
+    a: "A) unassailable"
+  },
+  {
+    q: "Her ____ insights impressed the whole committee.",
+    options: ["A) perspicacious", "B) perspective", "C) persuasive", "D) persistent"],
+    a: "A) perspicacious"
+  },
+  {
+    q: "The committee reached a ____ decision.",
+    options: ["A) unanimous", "B) universal", "C) unified", "D) uniform"],
+    a: "A) unanimous"
   }
+
+
+
+
+  
   // ← Add remaining questions here if needed
 ];
+
 
 //Second added
 let currentIndex = 0;
@@ -477,22 +755,7 @@ form.addEventListener("submit", (e) => {
     return;
   }
 
-//form.addEventListener("submit", function (e) {
-    //const name = document.getElementById("name").value.trim();
-    //const email = document.getElementById("email").value.trim();
-//const whatsapp = document.getElementById("whatsapp").value.trim();
 
- 
-  //if (!name) {
-    //alert("Name is required to submit the quiz.");
-    //return;
-  //}
-  
-    //if (!email && !whatsapp) {
-    //alert("Please enter either an email address or a WhatsApp number.");
-    //e.preventDefault();
-    //return;
-  //}
 
   // Check unanswered questions
   const unanswered = [];
@@ -522,18 +785,18 @@ form.addEventListener("submit", (e) => {
   });
 
   // Level Logic
-  let level = "A1";
-  if (score > 85) level = "C2";
-  else if (score > 68) level = "C1";
-  else if (score > 51) level = "B2";
-  else if (score > 35) level = "B1";
-  else if (score > 18) level = "A2";
+  let level = "A1 (Beginner)";
+  if (score > 85) level = "C2 (Proficiency)";
+  else if (score > 68) level = " (Advanced)";
+  else if (score > 51) level = "B2 (Upper-Intermediate)";
+  else if (score > 35) level = "B1 (Intermediate)";
+  else if (score > 18) level = "A2 (Elementary)";
 
+  alert(`Test submitted successfully!\nYou scored ${score}/${questions.length}.\nYour level is ${level}.`);
   //alert(`Test submitted successfully!\nYou scored ${score}/${questions.length}.\nYour level is ${level}.`);
-  //alert(`Test submitted successfully!\nYou scored ${score}/${questions.length}.\nYour level is ${level}.`);
-  alert(`Congratulations ${name}! Test submitted successfully!`);
-  alert(`You scored ${score}/${questions.length}.\nYour level is ${level}.`);
-
+  //alert(`Congratulations ${name}! Test submitted successfully! \nYou scored ${score} out of ${questions.length}. \nYour level is ${level}.` );
+  //alert(`You scored ${score}/${questions.length}.\nYour level is ${level}.`);
+  window.location.reload();
 
   // Send to Google Sheets
   const formData = new FormData();
@@ -557,3 +820,5 @@ form.addEventListener("submit", (e) => {
   //added
   currentPage = 0;
 });
+
+//window.location.reload();

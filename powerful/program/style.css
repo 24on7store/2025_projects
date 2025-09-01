@@ -546,6 +546,11 @@ footer{
 /* ---------------------------------------------------------------------------------------- */
 /* For Small devices */
 @media(max-width: 768px) {
+    html, body{
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+    }
     .text-box h1{
         font-size: 20px;
         position: relative;
@@ -708,7 +713,7 @@ h3{
     font-size: 17px;
     /* font-weight: 600; */
     margin: 10px 0;
-    color: blue;
+    /* color: blue; */
     font-weight: bolder;
 }
 
@@ -811,7 +816,7 @@ h3{
     text-align: center;
     font-weight: bold;
     position: relative;
-    bottom: 20px;
+    top: -20px;
 }
 
 
@@ -840,7 +845,7 @@ h3{
     border-radius: 5px;
     transition: background-color 0.3s ease;
     position: relative;
-    bottom: 20px;
+    bottom: -10px;
     right: 0;
     margin-bottom: 100px;
     align-items: center;
@@ -1025,6 +1030,7 @@ h3{
         height: auto;
         line-height: 2rem;
         text-align: center;
+        font-weight: lighter;
     }
 
     .arrow{
@@ -1075,23 +1081,39 @@ h3{
     text-align: center;         /* Switch from 2 columns to 1 */
 }
 
-.about-us p {
-    column-count: 1;         /* Switch from 2 columns to 1 */
+/* .about-us p {
+    column-count: 1;         
     min-width: auto;
     font-size: 16px;
     line-height: 2rem;
     text-align: center;
     color: #fff;
     font-weight: lighter;
+} */
+.about-us p {
+    column-count: 1;         /* Switch from 2 columns to 1 */
+    min-width: auto;
+    font-size: 18px;
+    line-height: 2rem;
+    /* word-spacing: 0.1rem; */
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    font-family: 'Courier New', Courier, monospace;
 }
+
 
 .staff p {
     position: relative;
-    text-align: center;
+    justify-content: center;
+    text-align: justify;
     align-items: center;
+    left: 265px;
+    padding: 0;
 }
 
 .staff h2{
+    text-align: center;
     position: relative;
     color: white;
     left: 0;
