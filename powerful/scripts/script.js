@@ -559,13 +559,10 @@ const questions = [
     options: ["A) unanimous", "B) universal", "C) unified", "D) uniform"],
     a: "A) unanimous"
   }
-
-
-
-
   
   // ← Add remaining questions here if needed
 ];
+
 
 
 //Second added
@@ -785,18 +782,18 @@ form.addEventListener("submit", (e) => {
   });
 
   // Level Logic
-  let level = "A1 (Beginner)";
-  if (score > 85) level = "C2 (Proficiency)";
-  else if (score > 68) level = " (Advanced)";
-  else if (score > 51) level = "B2 (Upper-Intermediate)";
-  else if (score > 35) level = "B1 (Intermediate)";
-  else if (score > 18) level = "A2 (Elementary)";
+  let level = "A1";
+  if (score > 85) level = "C2";
+  else if (score > 68) level = "C1";
+  else if (score > 51) level = "B2";
+  else if (score > 35) level = "B1";
+  else if (score > 18) level = "A2";
 
   alert(`Test submitted successfully!\nYou scored ${score}/${questions.length}.\nYour level is ${level}.`);
   //alert(`Test submitted successfully!\nYou scored ${score}/${questions.length}.\nYour level is ${level}.`);
   //alert(`Congratulations ${name}! Test submitted successfully! \nYou scored ${score} out of ${questions.length}. \nYour level is ${level}.` );
   //alert(`You scored ${score}/${questions.length}.\nYour level is ${level}.`);
-  window.location.reload();
+  //window.location.reload();
 
   // Send to Google Sheets
   const formData = new FormData();
@@ -819,6 +816,9 @@ form.addEventListener("submit", (e) => {
   form.reset();
   //added
   currentPage = 0;
+  setTimeout(() => {
+    location.reload();
+  }, 1000);
 });
 
 //window.location.reload();

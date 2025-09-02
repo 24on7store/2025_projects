@@ -578,6 +578,9 @@ footer{
     justify-content: center;
     align-items: center;
     box-shadow: 5px 10px 10px 5px black;
+    /* Try to fix the overflow issue */
+    margin: 0;
+    overflow-x: hidden;
 
 }
 
