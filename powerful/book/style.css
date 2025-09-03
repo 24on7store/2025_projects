@@ -421,14 +421,14 @@ footer{
     font-weight: 300;
     font-family: 'Courier New', Courier, monospace;
 }
-
 .staff p {
     position: relative;
     justify-content: center;
-    text-align: justify;
+    text-align: center;
     align-items: center;
-    left: 265px;
+    /* left: 265px; */
     padding: 0;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .staff h2{
@@ -448,6 +448,17 @@ footer{
 }
 
 
+/* .staff h2 {
+  color: #f44336;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.staff p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: grey;
+} */
 
 
 .icons a,
@@ -457,10 +468,12 @@ footer{
     padding-right: 0;
     text-align: center;
     margin-left: 0;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .icons p{
     font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .icons a{
@@ -480,8 +493,6 @@ footer{
     width: auto;
     height: auto;
     position: relative;
-    /* bottom: 30px; */
-    margin-bottom: 0;
     /* align-items: center; */
 }
 

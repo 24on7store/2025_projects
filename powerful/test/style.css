@@ -542,11 +542,13 @@ footer{
 #questions-container{
     /* background-color: red; */
     /* padding: 10px 10px; */
-    width: 350px;
+    width: 100%;
+    max-width: 600px;
     justify-content: left;
     align-items: left;
     padding: 0 15px;
     text-align: left;
+    margin: 0 auto;
 
     line-height: 1.4rem;
     /* text-shadow: 30px 0px 50px black; */
@@ -569,7 +571,9 @@ footer{
 
 #quiz-form{
     background-color: #fff;
-    width: auto;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
     padding: 20px 0;
     position: relative;
     left: 0; 
@@ -579,7 +583,6 @@ footer{
     align-items: center;
     box-shadow: 5px 10px 10px 5px black;
     /* Try to fix the overflow issue */
-    margin: 0;
     overflow-x: hidden;
 
 }
@@ -599,7 +602,8 @@ footer{
     display: flex;
     flex-wrap: wrap;
     gap: 10px; /* Space between fields */
-    max-width: auto;
+    width: 100%;
+    /* max-width: auto; */
     align-items: left;
     position: relative;
     padding: 15px 2px;
@@ -672,7 +676,7 @@ footer{
 }
 
 
-#submit:hover{
+/* #submit:hover{
     background-color: blue;
     position: relative;
     left: 330px;
@@ -682,7 +686,7 @@ footer{
     text-align: center;
     padding: 5px 10px;
     border: none;
-}
+} */
 
 
 label{
@@ -709,6 +713,7 @@ label{
 
 #username, #whatsapp, #email{
     /* display: inline-block; */
+    width: 100%;
     margin: 3px 15px;
     align-items: left;
     position: relative;
@@ -828,14 +833,14 @@ label{
     font-family: 'Courier New', Courier, monospace;
 }
 
-
 .staff p {
     position: relative;
     justify-content: center;
-    text-align: justify;
+    text-align: center;
     align-items: center;
-    left: 265px;
+    /* left: 265px; */
     padding: 0;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .staff h2{
@@ -855,6 +860,17 @@ label{
 }
 
 
+/* .staff h2 {
+  color: #f44336;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.staff p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: grey;
+} */
 
 
 .icons a,
@@ -864,10 +880,12 @@ label{
     padding-right: 0;
     text-align: center;
     margin-left: 0;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .icons p{
     font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .icons a{
@@ -887,8 +905,6 @@ footer{
     width: auto;
     height: auto;
     position: relative;
-    /* bottom: 30px; */
-    margin-bottom: 0;
     /* align-items: center; */
 }
 
