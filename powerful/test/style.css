@@ -664,7 +664,21 @@ footer{
     background-color: red;
     position: relative;
     top: 15px;
-    left: 140px;
+    left: 160px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: lighter;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px 10px;
+    border: none;
+}
+#submit:hover{
+    background-color: blue;
+    position: relative;
+    top: 15px;
+    left: 160px;
     color: #fff;
     font-size: 16px;
     font-weight: lighter;
@@ -675,18 +689,19 @@ footer{
     border: none;
 }
 
-
-/* #submit:hover{
+/* 
+ #submit:hover{
     background-color: blue;
     position: relative;
-    left: 330px;
+    left: 140px;
     color: #fff;
     font-size: 16px;
     font-weight: lighter;
     text-align: center;
     padding: 5px 10px;
     border: none;
-} */
+}  */
+
 
 
 label{
@@ -778,23 +793,26 @@ label{
 .prev-btn {
     background-color: blue;
     color: white;
-    padding: 5px 10px;
+    padding: 5px 20px;
     border: none;
     cursor: pointer;
-    margin-right: 230px; /* space between buttons */
+    margin-right: 290px; 
+    margin-left: 10px;
     font-size: 15px;
     font-weight: bold;
     }
 .next-btn {
     background-color: blue;
     color: white;
-    padding: 5px 20px;
+    padding: 5px 60px;
     width: auto;
     border: none;
     cursor: pointer;
     font-size: 15px;
     font-weight: bold;
-}
+} 
+
+
 
 /* Optional hover effect */
 /* .prev-btn:hover, .next-btn:hover {
@@ -911,3 +929,13 @@ footer{
 
 
 }
+/* Mobile-friendly */
+/* @media (max-width: 480px) {
+.nav-buttons {
+    padding: 0 10px;
+}
+.prev-btn, .next-btn {
+    font-size: 14px;
+    padding: 8px 15px;
+}
+} */
