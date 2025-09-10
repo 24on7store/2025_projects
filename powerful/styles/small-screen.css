@@ -461,6 +461,7 @@ h3{
         /* flex: 1 1 50%; */
         max-width: auto;
         height: auto;
+        font-size: 16px;
     }
 
     .contact-form .cta{
