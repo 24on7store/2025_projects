@@ -586,7 +586,7 @@ h3{
 }
 .staff p{
     font-size: 16px;
-    font-weight: 100;
+    /* font-weight: 100; */
 }
 
 /* .staff{

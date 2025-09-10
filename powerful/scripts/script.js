@@ -68,7 +68,7 @@ const questions = [
     options: ["A) living", "B) live", "C) lives", "D) am live"]
   },
   {
-    q: "What time ___ it.",
+    q: "What time ___ it?",
     a: "C) is",
     options: ["A) are", "B) do", "C) is", "D) has"]
   },
@@ -139,12 +139,12 @@ const questions = [
   },
   //Elementary - 17 to 34
   {
-    q: "I am good ____ playing guitar.",
+    q: "I am good ____ playing the guitar.",
     a: "A) at",
     options: ["A) at", "B) in", "C) on", "D) with"]
   },
   {
-    q: "She speaks English ____ than me.",
+    q: "She speaks English ____ than I.",
     a: "B) better",
     options: ["A) good", "B) better", "C) best", "D) more good"]
   },
@@ -210,8 +210,8 @@ const questions = [
   },
   {
     q: "I ____ go to the gym, but now I don't.",
-    a: "A) used",
-    options: ["A) used", "B) use", "C) using", "D) use to"]
+    a: "A) used to",
+    options: ["A) used to", "B) use", "C) using", "D) use to"]
   },
   {
     q: "We have lived here ____ five years.",
@@ -273,8 +273,8 @@ const questions = [
   },
   {
     q: "I’m used to ___ early.",
-    options: ["A) wake", "B) waking", "C) woke", "D) woken"],
-    a: "B) waking"
+    options: ["A) wake up", "B) waking up", "C) woke", "D) woken"],
+    a: "B) waking up"
   },
   {
     q: "I’ve got too ___ work to do.",
@@ -282,7 +282,7 @@ const questions = [
     a: "B) much"
   },
   {
-    q: "We had fun, ___ the rain.",
+    q: "We had fun ___ the rain.",
     options: ["A) although", "B) because", "C) if", "D) when"],
     a: "A) although"
   },
@@ -293,7 +293,7 @@ const questions = [
   },
   {
     q: "That’s the person ___ car was stolen.",
-    options: ["A) who", "B) ", "C) whose", "D) that"],
+    options: ["A) who", "B) which", "C) whose", "D) that"],
     a: "C) whose"
   },
   {
@@ -313,7 +313,7 @@ const questions = [
     a: "B) fell"
   },
   {
-    q: "She speaks English fluently, ____ she never lived abroad.",
+    q: "She speaks English fluently ____ she never lived abroad.",
     options: ["A) although", "B) despite", "C) because", "D) unless"],
     a: "A) although"
   },
@@ -324,8 +324,8 @@ const questions = [
   },
   {
     q: "I wish I ____ more confident when I speak English.",
-    options: ["A) am", "B) have been", "C) was", "D) were being"],
-    a: "C) was"
+    options: ["A) am", "B) have been", "C) was", "D) were"],
+    a: "D) were"
   },
   {
     q: "They apologized ____ being late.",
