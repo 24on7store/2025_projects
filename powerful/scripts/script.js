@@ -54,7 +54,7 @@
 const questions = [
   {
     q: "What is your name?",
-    a: "A) My name is Anna",
+    a: "B) My name is Anna",
     options: ["A) I name is Anna", "B) My name is Anna", "C) Me is Anna", "D) I am name Anna"]
   },
   {
@@ -74,7 +74,7 @@ const questions = [
   },
   {
     q: "Choose the correct sentence:",
-    a: "C) He doesn't like pizza.",
+    a: "C) He doesn't like pizza",
     options: ["A) He not like pizza", "B) He don't like pizza", "C) He doesn't like pizza", "D) He doesn't likes pizza"]
   },
   {
@@ -94,7 +94,7 @@ const questions = [
   },
   {
     q: "Today is ____ Monday.",
-    a: "C) The",
+    a: "C) the",
     options: ["A) a", "B) an", "C) the", "C) some"]
   },
   {
@@ -283,8 +283,8 @@ const questions = [
   },
   {
     q: "We had fun ___ the rain.",
-    options: ["A) although", "B) because", "C) if", "D) when"],
-    a: "A) although"
+    options: ["A) despite", "B) because", "C) if", "D) when"],
+    a: "A) despite"
   },
   {
     q: "Let me know if you ___ any questions.",
@@ -304,7 +304,7 @@ const questions = [
   {
     q: "I regret ___ him the truth.",
     options: ["A) tell", "B) to tell", "C) telling", "D) told"],
-    a: "telling"
+    a: "C) telling"
   },
 // B2 (Upper Intermediate - 51 to 67)
   {
@@ -569,7 +569,7 @@ const questions = [
 let currentIndex = 0;
 let userAnswers = {};
 //Added
-const questionsPerPage = 10;
+const questionsPerPage = 100;
 let currentPage = 0;
 
 const startBtn = document.getElementById("start-btn");

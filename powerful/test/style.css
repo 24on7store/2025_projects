@@ -241,7 +241,7 @@ nav .fa{
     left: 330px;
     color: #fff;
     font-size: 16px;
-    font-weight: lighter;
+    font-weight: bold;
     text-align: center;
     padding: 5px 10px;
     border: none;
@@ -667,7 +667,7 @@ footer{
     left: 130px;
     color: #fff;
     font-size: 16px;
-    font-weight: lighter;
+    font-weight: bold;
     justify-content: center;
     align-items: center;
     text-align: center;
