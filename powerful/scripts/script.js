@@ -93,9 +93,9 @@ const questions = [
     options: ["A) who", "B) where", "C) what", "D) where"]
   },
   {
-    q: "Today is ____ Monday.",
-    a: "C) the",
-    options: ["A) a", "B) an", "C) the", "C) some"]
+    q: "My birthday is ____ December 7.",
+    a: "C) on",
+    options: ["A) in", "B) at", "C) the", "D) on"]
   },
   {
     q: 'The opposite of "big" is?',
@@ -194,9 +194,9 @@ const questions = [
     options: ["A) nice", "B) nicer", "C) most nice", "D) nicest"]
   },
   {
-    q: "I am looking ____ my keys.",
-    a: "C) for",
-    options: ["A) to", "B) with", "C) for", "D) at"]
+    q: "I am looking forward to ____ you next week.",
+    a: "C) seeing",
+    options: ["A) see", "B) saw", "C) seeing", "D) will see"]
   },
   {
     q: "How ____ sugar do you want?",
@@ -378,7 +378,7 @@ const questions = [
     a: "B) went"
   },
   {
-    q: "I’d like to know what time the meeting is ____.",
+    q: "I’d like to know what time the meeting ____.",
     options: ["A) start", "B) starts", "C) starting", "D) started"],
     a: "B) starts"
   },
@@ -491,8 +491,8 @@ const questions = [
   },
   {
     q: "He is fluent in three languages, not ____ English.",
-    options: ["A) only", "B) just", "C) merely", "D) least"],
-    a: "D) least"
+    options: ["A) only", "B) not yet", "C) merely", "D) least"],
+    a: "A) only"
   },
   {
     q: "Her speech was both _____ and impactful.",
@@ -525,7 +525,7 @@ const questions = [
     a: "A) beacon"
   },
   {
-    q: "The findings were ____ to the hypothesis.",
+    q: "Gangs are ____ for any country.",
     options: ["A) detrimental", "B) determinative", "C) determined", "D) detained"],
     a: "A) detrimental"
   },
@@ -541,18 +541,18 @@ const questions = [
   },
   {
     q: "His actions were in ____ violation of the rules.",
-    options: ["A) blatant", "B) blunt", "C) bluntly", "D) blank"],
-    a: "A) blatant"
+    options: ["A) bluntly", "B) blunt", "C) blatant", "D) blank"],
+    a: "C) blatant"
   },
   {
     q: "The theory remains ____ and unchallenged.",
-    options: ["A) unassailable", "B) unattainable", "C) unapproachable", "D) unspeakable"],
-    a: "A) unassailable"
+    options: ["A) unspeakable", "B) unattainable", "C) unapproachable", "D) unassailable"],
+    a: "D) unassailable"
   },
   {
     q: "Her ____ insights impressed the whole committee.",
-    options: ["A) perspicacious", "B) perspective", "C) persuasive", "D) persistent"],
-    a: "A) perspicacious"
+    options: ["A) perspective", "B) perspicacious", "C) persuasive", "D) persistent"],
+    a: "B) perspicacious"
   },
   {
     q: "The committee reached a ____ decision.",
