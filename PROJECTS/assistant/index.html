@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>24H Assistant</title>
+<link rel="stylesheet" href="styles/style.css">
+
+
+</head>
+
+<body>
+
+<h1>⏰ 24-Hour Assistant</h1>
+<!-- <h6>Now, It's </h6>
+const date = new Date();
+document.querySelector('h6').textContent += date.toLocaleTimeString(); -->
+
+<!-- ADD TASK FORM -->
+<input type="text" id="taskName" placeholder="Task name">
+<input type="time" id="startTime">
+<input type="time" id="endTime">
+<button onclick="addTask()">Add Task</button>
+
+<!-- <h2 id="today">📋  Tasks</h2>
+<p id="today">📋  Tasks</p> -->
+<p id="demo"> Here are your tasks</p>
+
+<div id="taskList"></div>
+
+<button onclick="startAssistant()">Start Assistant</button>
+
+<script src="scripts/script.js"></script>
+
+</body>
+</html>

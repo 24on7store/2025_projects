@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>24H Assistant</title>
+
+<style>
+  body {
+    font-family: Arial;
+    text-align: center;
+    background: #f4f4f4;
+    padding: 20px;
+  }
+
+  input, button {
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .task {
+    background: white;
+    padding: 15px;
+    margin: 10px auto;
+    width: 300px;
+    border-radius: 10px;
+  }
+</style>
+</head>
+
+<body>
+
+<h1>⏰ 24-Hour Assistant</h1>
+
+<!-- ADD TASK FORM -->
+<input type="text" id="taskName" placeholder="Task name">
+<input type="time" id="startTime">
+<input type="time" id="endTime">
+<button onclick="addTask()">Add Task</button>
+
+<h2>📋 Today's Tasks</h2>
+<div id="taskList"></div>
+
+<button onclick="startAssistant()">Start Assistant</button>
+
+<script>
+let tasks = [];
+
+function speak(message) {
+  const speech = new SpeechSynthesisUtterance(message);
+  speech.lang = "en-US";
+  window.speechSynthesis.speak(speech);
+}
+
+function addTask() {
+  const name = document.getElementById("taskName").value;
+  const start = document.getElementById("startTime").value;
+  const end = document.getElementById("endTime").value;
+
+  if (!name || !start || !end) {
+    alert("Please fill all fields");
+    return;
+  }
+
+  const task = { name, start, end };
+  tasks.push(task);
+
+  displayTasks();
+}
+
+function displayTasks() {
+  const list = document.getElementById("taskList");
+  list.innerHTML = "";
+
+  tasks.forEach(task => {
+    list.innerHTML += `
+      <div class="task">
+        <strong>${task.name}</strong><br>
+        ${task.start} - ${task.end}
+      </div>
+    `;
+  });
+}
+
+function checkTime() {
+  const now = new Date();
+  const current = now.toTimeString().slice(0,5); // HH:MM
+
+  tasks.forEach(task => {
+
+    // START
+    if (current === task.start) {
+      speak(`Time to start ${task.name}`);
+    }
+
+    // END
+    if (current === task.end) {
+      speak(`Time is up. Stop ${task.name}`);
+    }
+
+  });
+}
+
+function startAssistant() {
+  speak("Assistant started. Stay focused.");
+  setInterval(checkTime, 1000);
+}
+</script>
+
+</body>
+</html>

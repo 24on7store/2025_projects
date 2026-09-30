@@ -1,0 +1,20 @@
+
+body {
+    font-family: Arial;
+    text-align: center;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px;
+}
+
+.task {
+    background: white;
+    padding: 15px;
+    margin: 10px auto;
+    width: 300px;
+    border-radius: 10px;
+}
