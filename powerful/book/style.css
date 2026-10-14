@@ -13,8 +13,6 @@
     position: relative;
 }
 
-
-
 .header2{
     /* background-color: #f44336; */
     /* background-color: rgba(0, 0, 255, 0.2);  */
@@ -23,8 +21,6 @@
     height: 150px;
     padding: 20px 40px;
 }
-
-
 
 
 nav{
@@ -74,12 +70,9 @@ nav img{
     width: 100%;
 }
 
-
-
 nav .fa{
     display: none;
 }
-
 
 
 /*----------------------------Book Section Codes-------------------------*/
@@ -117,17 +110,7 @@ nav .fa{
     position: relative;
     bottom: 5px;
 }
-/* Images.....*/
-/* .book img{
-    position: relative;
-    padding: 15px 100px;
-    width: 80%;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 
-} */
 
 .book-img {
     perspective: 1000px; /* Gives the 3D depth */
@@ -173,9 +156,6 @@ nav .fa{
     background-color: blue;
 }
 
-
-
-
 /* ------------------------All the footer codes go here -------------------------------*/
 
 .icons, .staff, .about-us{
@@ -205,11 +185,6 @@ nav .fa{
     font-weight: 100;
 }
 
-/* .staff{
-    min-width: 100px;
-    position: relative;
-    left: 100px;
-} */
 
 .about-us p{
     min-width: 450px;
@@ -248,19 +223,11 @@ nav .fa{
 
 }
 
-/* .icons a{
-    display: flex;
-    color: white;
-    gap: 15px;
-
-}  */
-
 footer{
     background-color: black;
     width: 100%;
     height: auto;
 }
-
 
 
 /* ---------------------------------------------------------------------------------------- */
@@ -296,17 +263,10 @@ footer{
         top: 20px;
     }
 
-    /* nav .fa-bars{
-        color: #f44336;
-        position: relative;
-    
-    } */
 
     .nav-links ul{
         padding: 30px;
     }
-
-
 
 /* Quiz Part Codes */
 .book h2{
@@ -318,18 +278,6 @@ footer{
     position: relative;
     top: -15px;
 }
-
-/* .quiz h3{
-    font-size: 18px;
-    line-height: 1.4rem;
-    padding: 1px 0;
-    text-align: center;
-    font-weight: bold;
-    position: relative;
-    top: -15px;
-    align-items: center;
-    justify-content: center;
-} */
 
 
 .book p{
@@ -388,12 +336,6 @@ footer{
     margin-bottom: 100px 0;
 }
 
-/* .buy-btn:hover {
-    background-color: darkblue;
-} */
-
-
-
 
 /*Footer codes go heres*/
 .info-sections {
@@ -446,19 +388,6 @@ footer{
     position: relative;
     right: 200px;
 }
-
-
-/* .staff h2 {
-  color: #f44336;
-  margin-bottom: 20px;
-  font-size: 24px;
-}
-
-.staff p {
-  margin: 10px 0;
-  font-size: 16px;
-  color: grey;
-} */
 
 
 .icons a,
