@@ -1,0 +1,177 @@
+/* --- Base Styling --- */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.header {
+    min-height: 200px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.header2 {
+    background-image: linear-gradient(rgba(4,9,30,0.87),rgba(4,9,30,0.87)), url('../images/home2.webp'); 
+    width: auto;
+    height: 150px;
+    padding: 20px 40px;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: 30px;
+}
+
+nav img {
+    width: 150px;
+    position: relative;
+    top: 18px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    top: 20px;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 5px;
+    background-color: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+nav .fa {
+    display: none;
+}
+
+/* --- New Scholarship Page Component Styling --- */
+.scholarship-container {
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 1000px;
+}
+
+.scholarship-container h2 {
+    font-size: 35px;
+    color: #f44336;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.scholarship-container p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.form-wrapper {
+    margin: 30px auto;
+    max-width: 760px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+}
+
+/* --- Form Submit Confirmation Notification Layout --- */
+#success-message {
+    display: none;
+    background-color: #e8f5e9;
+    border: 2px solid #4caf50;
+    color: #2e7d32;
+    padding: 30px;
+    border-radius: 8px;
+    margin: 30px auto;
+    max-width: 700px;
+}
+
+#success-message i {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+#success-message h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* --- Footer Elements --- */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+.info-sections {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-us, .staff, .icons {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px;
+}
+
+.info-sections h2 {
+    color: #f44336;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.info-sections p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #ccc;
+}
+
+.role {
+    font-weight: bold;
+    color: #fff;
+}
+
+.icons a i {
+    color: #fff;
+    font-size: 20px;
+    margin: 10px 10px 20px 0;
+    transition: 0.3s;
+}
+
+.icons a i:hover {
+    color: #f44336;
+}
